@@ -1,0 +1,6 @@
+run wake
+calcul du coureur : photo piste d'athlé avec des chiffres en plus
+
+plan d'entrainement
+	semi
+		9 semaines

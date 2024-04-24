@@ -1,0 +1,217 @@
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	<!-- <link rel="icon" type="image/png" href="favicon-16x16.png" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Le coin du coureur</title>
+	<meta name="description" content="calculer son allure de course et connaitre ses temps de passage pour le marathon, semi-marathon ou le 10k. résultats dans le tableau d'allure/temps de passage"/>
+	<link rel="alternate" href="https://calcul-course.go.yj.fr/" hrefLang="fr-FR"/>
+	<link rel="canonical" href="https://calcul-course.go.yj.fr/"/>
+	<meta name="google-site-verification" content="P2RnQJqMHQIo0wV5upcqkomEedBomEHMJMhdLxUrBy8" />
+	<meta name="keywords" content="allure, temps de course à pied, tableau des allures, temps de passage, vma"/>
+	<meta name="author" content="F G"/>
+	<meta property="og:url" content="https://calcul-course.go.yj.fr/"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="calculs du coureur"/>
+	<meta property="og:description" content="calculer son allure de course et connaitre ses temps de passage pour le marathon, semi-marathon ou le 10k. résultats dans le tableau d'allure/temps de passage"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:site" content="@Calcul allure, temps de course et VMA - marathon, semi-marathon et 10k"/>
+	<meta name="twitter:creator" content="@Calcul allure, temps de course et VMA - marathon, semi-marathon et 10k"/>
+
+	<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+	.navbar-nav > li{
+	  margin-left:10px;
+	  margin-right:5px;
+	}
+	
+	.nav-link {
+		color: #ffffff;
+	}
+	
+	.nav-link:hover {
+		color: #6592e6;
+	}
+	
+	.nav-item.active .nav-link {
+		color: #ff6666;
+	}
+			
+	.title_article{
+		color: #ff6666;
+	}
+	
+	.btn_parti {
+	 color: #ffffff;
+	 background-color: #6592e6;
+	}
+		
+	.btn_parti:hover {
+	 color: #ffffff;
+	 background-color: #2260d2;
+	}
+	
+	</style>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebPage",
+		"name": "calculer son allure et son temps de course à pied et sa VMA",
+		"description": "calculer son allure de course et connaitre ses temps de passage pour le marathon, semi-marathon ou le 10k. résultats dans le tableau d'allure/temps de passage",
+		"publisher": {
+			"@type": "Person",
+			"name": "F G"
+		}
+	}
+	</script>
+	<!-- <link href="../assets/dist/css/dropdowns.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    
+<main>
+  <div class="container py-4">
+<!--   <header>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <div class="container-fluid">
+		<a href="/" class="d-flex align-items-center me-3 mb-lg-0 text-white text-decoration-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+		  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+		</svg>
+        </a>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		 <ul class="navbar-nav">
+		  <li class="nav-item dropdown">
+          <a class="nav-link fs-5 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Calculs</a>
+		  <ul class="dropdown-menu bg-secondary fs-6" aria-labelledby="navbarDropdownMenuLink">
+			<li class="nav-item mx-2">
+			  <a class="nav-link" href="https://calcul-course.go.yj.fr/pacecalcul.php">Allure</a>
+			</li>
+			<li class="nav-item mx-2">
+			  <a class="nav-link" href="https://calcul-course.go.yj.fr/timecalcul.php">Temps</a>
+			</li>
+			<li class="nav-item mx-2">
+			  <a class="nav-link" href="https://calcul-course.go.yj.fr/vmacalcul.php">VMA</a>
+			</li>
+		  </ul>
+		  </li>
+		  <li class="nav-item dropdown">
+          <a class="nav-link fs-5 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Plan d'entrainement</a>
+		  <ul class="dropdown-menu bg-secondary fs-6" aria-labelledby="navbarDropdownMenuLink">
+			<li class="nav-item mx-2">
+			  <a class="nav-link" href="#">marathon</a>
+			</li>
+			<li class="nav-item mx-2">
+			  <a class="nav-link" href="#">semi-marathon</a>
+			</li>
+			<li class="nav-item mx-2">
+			  <a class="nav-link" href="#">10k</a>
+			</li>
+		  </ul>
+		  </li>
+		  <li class="nav-item">
+			 <a class="nav-link fs-5" href="#">Actualités</a>
+		  </li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+  </header> -->
+  <header>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <div class="container-fluid">
+		<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+		  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+		</svg>
+        </a>
+		<div class="collapse navbar-collapse" id="navbarText">
+		  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			<li class="nav-item">
+			  <a class="nav-link ms-3 fs-5" href="https://calcul-course.go.yj.fr/pacecalcul.php">Calculs</a>
+			</li>
+			<li class="nav-item active">
+			  <a class="nav-link fs-5" href="https://calcul-course.go.yj.fr/timecalcul.php">Plans d'entrainement</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link fs-5" href="https://calcul-course.go.yj.fr/vmacalcul.php">Actualités</a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+  </header>
+	<div>
+      <div>	
+		<div class="bg-image my-3 mx-auto d-block" style="background-image: url('coureur.PNG'); max-width: 70%;height:300px;">
+	  </div>
+	</div>
+    <div class="pt-5 ps-5 pb-2 my-4 bg-light rounded-3">
+      <div class="container-fluid">	
+		<!-- <div class="bg-light rounded-3 bg-image" style="background-image: url('coureur.PNG'); background-size: cover;"> -->
+        <h1 class="display-6 fw-semibold">Plans d'entrainement</h1>
+		<p class="col-md-8 fs-7 fw-light">Les plans sont prévus pour des semaines entre 4 et 5 sorties, à adpater en fonction du temps disponible et de l'objectif à atteindre</p>
+    </div>
+	</div>
+
+    <div class="row align-items-md-stretch">   
+      <div class="col-md-4">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>Marathon</h2>
+          <p>Plan marathon sur 13 semaines</p>
+            <a class="btn btn_parti" href="pacecalcul.php" role="button">Go &raquo;</a>
+        </div>
+      </div>
+	  <div class="col-md-4">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>Semi-marathon</h2>
+          <p>Plan Semi-marathon sur 9 semaines</p>
+			<a class="btn btn_parti" href="timecalcul.php" role="button">Go &raquo;</a>
+        </div>
+      </div>
+	  <div class="col-md-4">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>10 km</h2>
+          <p>Plan 10 km sur 8 semaines</p>
+			<a class="btn btn_parti" href="vmacalcul.php" role="button">Go &raquo;</a>
+        </div>
+      </div>
+    </div>
+
+<footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Links  -->
+  <section class="">            
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <div class="fs-6 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+</svg>
+              fg@calcul-course.go.yj.fr
+            </div>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+&copy; F.G Company
+  </div>
+  <!-- Copyright -->
+</footer>
+  </div>
+</main>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
